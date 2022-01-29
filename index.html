@@ -5,17 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Town Counter</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Roboto Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <label for="budget">Budget</label>
-    <input type="text" name="budget" id="budget">
-    <br>
-    <label for="salary">Salary</label>
-    <input type="text" name="salary" id="salary">
-    <br>
-    <button id="check">Check</button>
-    <br>
-    <textarea name="result" id="result" cols="30" rows="10"></textarea>
+    <main class="calculator">
+        <section class="calculator-head">
+            
+            <div class="calculator-budget">
+                <label for="budget">Budget</label>
+                <input type="text" class="text-field" name="budget" id="budget">
+            </div>
+            <div class="calculator-salary">
+                <label for="salary">Salary</label>
+                <input type="text" class="text-field" name="salary" id="salary">
+            </div>
+            <button id="check" class="calculator-btn">Check</button>
+            
+        </section>
+        
+        <section class="calculator-results">
+
+            <label for="result">Time left</label>
+            <input type="text" class="text-field" name="result" id="result">
+
+        </section>
+
+    </main>
 
     <script src="budget.js"></script>
 </body>

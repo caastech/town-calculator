@@ -12,6 +12,7 @@ check.addEventListener('click', () => {
 
 })
 
+
 const timeCounter = (budget, salary) => {
 
     // Set the time counter to 0
@@ -42,7 +43,6 @@ const timeCounter = (budget, salary) => {
     else {
 
         // Set the value from textarea from minutes
-
         result.value = `${Math.ceil(minutes)} minutes`
         // console.log(minutes);
 
