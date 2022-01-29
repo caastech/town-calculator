@@ -18,11 +18,9 @@ const timeCounter = (budget, salary) => {
     let time = 0;
 
     while (Math.floor(budget) >= salary) {
-        // 
+        //Subtract budget from salary
         budget -= salary;
         
-        // console.log(budget);
-
         // Add 60 seconds to time
         time += 60
     }
@@ -32,15 +30,22 @@ const timeCounter = (budget, salary) => {
 
     // if minutes are more or equal to 60mins the time will be set to hours    
     if (minutes > 60) {
-        let hours = (minutes/60).toFixed(2)
-        console.log(hours);
 
+        // Convert minutes from hours
+        let hours = (minutes/60).toFixed(2)
+        // console.log(hours);
+
+        // Set the value of textarea from hours 
         result.value = `${hours.replace('.',':')} hours`
     }
     
     else {
-        console.log(minutes);
+
+        // Set the value from textarea from minutes
+
         result.value = `${Math.ceil(minutes)} minutes`
+        // console.log(minutes);
+
     }
     
 }
