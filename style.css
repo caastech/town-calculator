@@ -1,0 +1,114 @@
+/* ---------------------- Global Styles */
+:root {
+    --main-color: rgb(59, 59, 59);
+    --secondary-color: rgb(83, 83, 83);
+    --accent-color: #F85832;
+    --neutral-color: rgb(243, 243, 243);
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--neutral-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: .5em;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* ---------------------- Calculator Styles */
+
+.calculator {
+    background-color: var(--main-color);
+    border-radius: 10px;
+    display: grid;
+    font-size: 1.1em;
+    box-shadow: 0px 0px 10px var(--main-color);
+    overflow: hidden;
+    transition: transform 700ms ease-out;
+}
+
+.calculator-heading-head {
+    font-size: 1.2em;
+}
+
+
+/* ---------------------- Calculator Head Section */
+
+.calculator-head {
+    display: grid;   
+    row-gap: 1em; 
+    padding: 1.8em 2em 0 2em;
+}
+
+
+/* ---------------------- Calculator Results Section */
+.calculator-results {
+    background-color: var(--secondary-color);
+    padding: 1.5em 2em 2em;
+
+}
+
+/* ---------------------- TextField Styles */
+
+.text-field {
+    background-color: transparent;
+    color: var(--neutral-color);
+    border: none;
+    padding: .7rem;
+    font-size: 1em;
+    width: 100%;
+    border-bottom: .2rem solid var(--accent-color);
+}
+
+.text-field:hover,
+.text-field:focus {
+    outline: none;
+    border-bottom: .2rem solid var(--neutral-color);
+}
+/* ---------------------- Button Styles */
+
+.calculator-btn {
+    border:none;
+    border-radius: 5px;
+    padding: .9rem 0;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: var(--accent-color);
+    color: var(--neutral-color);
+}
+
+.calculator-btn:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+}
+
+
+/* ---------------------- Responsive Section */
+
+@media (min-width: 50em) {
+
+    .calculator {
+        transform: scale(1.2);
+    }
+}
