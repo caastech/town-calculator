@@ -18,22 +18,26 @@
     <main class="calculator">
         <section class="calculator-head">
             
-            <div class="calculator-budget">
+            <h1 class="calculator-head-text">Town Bankruptcy Calculator</h1>
+
+            <div class="calculator-head-budget">
                 <label for="budget">Budget</label>
-                <input type="text" class="text-field" name="budget" id="budget">
+                <input type="text" class="text-field" name="budget" id="budget" pattern="[0-9]">
             </div>
-            <div class="calculator-salary">
+            <div class="calculator-salary-head">
                 <label for="salary">Salary</label>
-                <input type="text" class="text-field" name="salary" id="salary">
+                <input type="text" class="text-field" name="salary" id="salary" pattern="[0-9]">
             </div>
-            <button id="check" class="calculator-btn">Check</button>
             
+            <button id="check" class="calculator-btn">Check</button>
+
         </section>
         
+
         <section class="calculator-results">
 
             <label for="result">Time left</label>
-            <input type="text" class="text-field" name="result" id="result">
+            <input type="text" class="text-field" name="result" id="result" readonly>
 
         </section>
 
